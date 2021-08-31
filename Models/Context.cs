@@ -9,6 +9,7 @@ namespace DIO_Curso.Models
     public class Context : DbContext
     {
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=RODRIGOPASTORIN\SQLEXPRESS;Initial Catalog=DIO;Integrated Security=True");
